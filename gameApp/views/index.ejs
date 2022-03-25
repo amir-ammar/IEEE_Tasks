@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="toggle-nav" id="toggle-nav">
+            <i class="material-icons">menu</i>
+        </span>
+        <!-- <div class=""> -->
+        <a href="#" class="logo"><img src="ieee.png" alt="">
+            <p>IEEE</p>
+        </a>
+        <!-- </div> -->
+        <ul class="main-nav" id="main-nav">
+            <li><a class="nav-links">Home</a></li>
+            <li><a class="nav-links">Play</a></li> 
+            <li id="contact-us"><a href="#" class="nav-links">About us</a></li>
+        </ul>
+    </nav>
+    <script>
+        let mainNav = document.getElementById('main-nav');
+        let toggleNav = document.getElementById('toggle-nav');
+        toggleNav.addEventListener('click', function () {
+            mainNav.classList.toggle('active')
+        });
+
+        let scrollDown = document.getElementById('contact-us');
+        scrollDown.addEventListener('click', function () {
+            window.scrollTo({
+                top: 700,
+                behavior: 'smooth'
+            });
+        });
+        
+        
+    </script>
+
+    <div class="container1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="display-4">Welcome to IEEE</h1>
+                    <p class="lead">This is a simple web application for entertainment</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">about us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-section">
+        <div class="box1">
+
+
+        </div>
+        
+
+        <div class="box2">
+            
+            
+
+        </div>
+    </div>
+
+
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>We are software engineers student at german university in cairo</p>
+    
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="amir.jpeg" alt="amir" style="width:40%">
+            <div class="amir-container">
+              <h2>Amir Ammar</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>amir@example.com</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="hassan.jpg" alt="hassan" style="width:40%">
+            <div class="hassan-container">
+              <h2>Hassan Haredy</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>hassan@example.com</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
