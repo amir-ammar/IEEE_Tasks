@@ -22,8 +22,8 @@
         <!-- </div> -->
         <ul class="main-nav" id="main-nav">
             <li><a class="nav-links">Home</a></li>
-            <li><a class="nav-links">Play</a></li> 
-            <li id="contact-us"><a href="#" class="nav-links">About us</a></li>
+            <li id="play"><a class="nav-links">Play</a></li> 
+            <li id="contact-us"><a class="nav-links">About us</a></li>
         </ul>
     </nav>
     <script>
@@ -33,15 +33,21 @@
             mainNav.classList.toggle('active')
         });
 
-        let scrollDown = document.getElementById('contact-us');
-        scrollDown.addEventListener('click', function () {
+        let contactScrollDown = document.getElementById('contact-us');
+        contactScrollDown.addEventListener('click', function () {
+            window.scrollTo({
+                top: 1500,
+                behavior: 'smooth'
+            });
+        });
+
+        let playScrollDown = document.getElementById('play');
+        playScrollDown.addEventListener('click', function () {
             window.scrollTo({
                 top: 700,
                 behavior: 'smooth'
             });
         });
-        
-        
     </script>
 
     <div class="container1">
@@ -50,30 +56,30 @@
                 <div class="jumbotron">
                     <h1 class="display-4">Welcome to IEEE</h1>
                     <p class="lead">This is a simple web application for entertainment</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">about us</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="game-section">
-        <div class="box1">
-
-
-        </div>
-        
-
-        <div class="box2">
-            
-            
-
+    <div class="container1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="display-4">Play With us</h1>
+                    <p class="lead">You can choose one of these two games</p>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <section id="games">
+        <a id="game1" class="game" href="/color"></a>
+        <a id="game2" class="game" href="/scissor"></a>
+    </section>
 
 
 
     <div class="about-section">
-        <h1>About Us</h1>
         <p>We are software engineers student at german university in cairo</p>
     
       
