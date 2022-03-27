@@ -13,39 +13,49 @@
 
 <body>
     <header>
-            <h2>Guess The Color</h2>
+        <h2>Guess The Color</h2>
     </header>
-    
 
-    <% if (results=="Choose Color" || results=="You Win") { %>
+
+    <% if (results=="Choose Color" || results=="You Win" ) { %>
         <div class="alert alert-success">
             <%= results %>
         </div>
-    <% } %>
+        <% } %>
 
-    <% if (results=="You lose") { %>
-        <div class="alert alert-danger">
-            <%= results %>
-        </div>
-    <% } %>
+            <% if (results=="You lose" ) { %>
+                <div class="alert alert-danger">
+                    <%= results %>
+                </div>
+                <% } %>
 
 
-   
-    <section id="guess-the-color">
-        <a id="color1" class="color" href="/guess1"></a>
-        <a id="color2" class="color" href="/guess2"></a>
-        <a id="color3" class="color" href="/guess3"></a>
-        <br>
-        <br>
-    </section>
-    <div class="button">
-        <button class="glow-on-hover" type="button" onclick="window.location.href='/color'">Paly again</button>
-        <button class="glow-on-hover" type="button" onclick="window.location.href='/'"> Change Game</button>
-    </div>
-        
-    <footer class="page__footer">
-        <p>&copy Amir and Haridy</p>
-    </footer>
+
+                    <section>
+                        <div id="guess-the-color">
+                            <div class="color-box">
+                                <a id="color1" class="color" href="/guess1"></a>
+                            </div>
+                            <div class="color-box">
+                                <a id="color2" class="color" href="/guess2"></a>
+                            </div>
+                            <div class="color-box">
+                                <a id="color3" class="color" href="/guess3"></a>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </section>
+                    <div class="button">
+                        <button class="glow-on-hover" type="button" onclick="window.location.href='/color'">Play
+                            Again</button>
+                        <button class="glow-on-hover" type="button" onclick="window.location.href='/'"> Change
+                            Game</button>
+                    </div>
+
+                    <footer class="page__footer">
+                        <p>&copy Amir and Haridy</p>
+                    </footer>
 </body>
 
 </html>

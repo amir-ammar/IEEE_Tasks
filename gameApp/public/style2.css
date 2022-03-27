@@ -39,6 +39,11 @@ a:link, a:visited {
     justify-content:space-around;
 }
 
+#paper-rock-scissor {
+    display:flex;
+    justify-content:space-around;
+}
+
 .color {
     width: 30%;
     min-height: 10%;
@@ -46,6 +51,14 @@ a:link, a:visited {
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #ff5f5f;
+}
+img:hover {
+    border-color: #fff;
 }
 #color1 {
     background-color:green;
@@ -179,6 +192,7 @@ section {
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 3em;
 }
 
 /* Navigation Styles*/

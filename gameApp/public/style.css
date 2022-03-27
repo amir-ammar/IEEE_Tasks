@@ -1,7 +1,8 @@
 body {
-    background: linear-gradient(-45deg, #13cf90, #e73c7e, #011820, #23d5ab);
+    background: linear-gradient(-45deg, #F4F6F6, #FF9C91, #643ecd, #1C2938);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    font-family: 'Oxygen', Sans-Serif;
 }
 
 @keyframes gradient {
@@ -26,8 +27,8 @@ body {
 
 .navbar {
     font-size: 18px;
-    background: linear-gradient(9deg, #111111, #000000, #000000, #030303, #070707, #020202);
-    border-bottom: #615858 4px solid;
+    background-color:#000;
+    border-bottom: #f0f0f0 4px solid;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     padding-bottom: 10px;
@@ -41,7 +42,6 @@ body {
 .nav-links, .logo, .material-icons {
     text-decoration: none;
     color: ghostwhite;
-    opacity: 0.6;
 }
 
 .main-nav li {
@@ -92,7 +92,7 @@ body {
 
 
 .jumbotron {
-    background-color: #848b8b;
+    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 20px;
     position: relative;
@@ -107,7 +107,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 150vh;
-    background-color: #a19c9c;
+    background-color: #f0f0f0;
     border-radius: 20px;
     position: relative;
 
@@ -124,15 +124,17 @@ body {
     width: 50%;
     right: 300px;
     height: 30vh;
-    background-color: #a19c9c;
+    background-color: #f0f0f0;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(7, 226, 241, 0.2), 0 6px 20px 0 rgba(2, 203, 253, 0.19);
 }
 
 
 
-#contact-us:hover {
+.nav-links:hover {
     cursor: pointer;
+    color: white;
+    text-shadow: 3px 0px 3px white;
 }
     
 
@@ -166,6 +168,11 @@ body {
     }
 }
 
+.game{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(7, 226, 241, 0.2), 0 6px 20px 0 rgba(2, 203, 253, 0.19);
+}
 #games {
     display:grid;
     justify-content:space-around;
@@ -181,7 +188,7 @@ body {
     bottom: 200px;
 }
 #game2 {
-    background-color:yellow;
+    background-color:blue;
     padding: 20px;
     border-radius: 20px;
     position: relative;

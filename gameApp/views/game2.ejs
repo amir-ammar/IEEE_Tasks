@@ -5,28 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <header>
-            <h2>Paper Rock Scissor</h2>
+        <h2>Paper Rock Scissor</h2>
     </header>
-        <section id="paper-rock-scissor">
-            <a id="paper" class="color" href=""><img src="paper.jpeg" alt=""></a>
-            <a id="rock" class="color" href=""><img src="rock.jpeg" alt=""></a>
-            <a id="scissor" class="color" href=""><img src="scissor.jpeg" alt=""></a>
-            <br>
-            <br>
-            <div id="replay-or-return">
-                <a id="play-again-button-prs" href="" tooltip="play again">Play Again</a> 
-                <a id="change-game-button" href="" tooltip="change game">Change Game</a>
-            </div>
-        </section>
-    <footer class="page__footer">
-        <p>&copy Amir Und Haridy</p>
-    </footer>
+
+    <% if (results=="Choose" || results=="You Win" || results=="Draw" ) { %>
+        <div class="alert alert-success">
+            <%= results %>
+        </div>
+        <% } %>
+
+            <% if (results=="You lose" ) { %>
+                <div class="alert alert-danger">
+                    <%= results %>
+                </div>
+                <% } %>
+
+                    <section>
+                        <div id="paper-rock-scissor">
+                            <div>
+                                <a id="paper" class="color" href="/guessPaper"><img src="paper.jpeg" alt=""></a>
+                            </div>
+                            <div>
+                                <a id="rock" class="color" href="/guessRock"><img src="rock.jpeg" alt=""></a>
+                            </div>
+                            <div>
+                                <a id="scissor" class="color" href="/guessScissor"><img src="scissor.jpeg" alt=""></a>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="button">
+                        <button class="glow-on-hover" type="button" onclick="window.location.href='/scissor'">Play
+                            Again</button>
+                        <button class="glow-on-hover" type="button" onclick="window.location.href='/'"> Change
+                            Game</button>
+                    </div>
+                    <footer class="page__footer">
+                        <p>&copy Amir Und Haridy</p>
+                    </footer>
 </body>
 
 </html>
